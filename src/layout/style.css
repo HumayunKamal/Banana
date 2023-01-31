@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+@font-face {
+  font-family: "Futura";
+  src: url("./Futura-Condensed-Extra-Bold.ttf");
+}
+
+.container {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  /* color: white; */
+}
+
+.top-left {
+  position: absolute;
+  top: 15vw;
+  left: 5vw;
+}
+
+.top-left h1 {
+  padding: 0;
+  margin: 0 0 0.05em 0;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: "Futura";
+  font-weight: 100;
+  font-size: min(18vw, 14em);
+  line-height: 0.85em;
+  text-transform: uppercase;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 5vw;
+  left: 5vw;
+  width: 30ch;
+  max-width: 40%;
+}
+
+.my-name {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+.my-name:hover {
+  color: rgb(227, 227, 227);
+  font-size: 1.1rem;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 5vw;
+  right: 5vw;
+  width: 35ch;
+  max-width: 40%;
+  line-height: 1em;
+  letter-spacing: -0.01em;
+  text-align: right;
+}
+
+img {
+  position: absolute;
+  left: 37vw;
+  padding-top: 10px;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  /* height: 50%; */
+  filter: brightness(0) invert(1);
+}
