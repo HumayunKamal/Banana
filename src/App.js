@@ -6,7 +6,6 @@ import { Environment, useGLTF } from "@react-three/drei";
 
 // Scene
 import BananaScene from "./image/banana-v1-transformed.glb";
-
 import Overlay from "./layout/Overlay";
 
 // Banana
@@ -45,7 +44,7 @@ const Banana = ({ z }) => {
   );
 };
 
-function App({ count = 100, depth = 80 }) {
+function App({ count = 20, depth = 80 }) {
   return (
     <>
       <Canvas gl={{ alpha: false }} camera={{ near: 0.01, far: 110, fov: 30 }}>
@@ -56,7 +55,6 @@ function App({ count = 100, depth = 80 }) {
           {Array.from({ length: count }, (_, idx) => (
             <Banana key={idx} z={-(idx / count) * depth - 20} />
           ))}
-
           {/* <EffectComposer>
     
           <DepthOfField
